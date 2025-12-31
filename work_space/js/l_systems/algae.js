@@ -2,21 +2,28 @@
 
 const algaeGrammar = {
   variables: "AB",
-  axiom: "A",
-  rules: { "A": [A, B], "B": ["A"] },
+  axiom: ["A"],
+  rules: { "A": ["A", "B"], "B": ["A"] },
 };
 
 const spawnVariable = (variable, algaeGrammar) => algaeGrammar.rules[variable];
 
-const spawnAllStringsInSameLevel = (strings, algaeGrammar) => {
-  return strings.flatMap((string) => spawnVariable(string, algaeGrammar));
-};
+const spawnAllStringsInSameLevel = (strings, algaeGrammar) =>
+  strings.flatMap((string) => spawnVariable(string, algaeGrammar));
 
 const generateAlgae = (string, levels, algaeGrammar) => {
-  let parseString = [string];
-  for (let index = 0; index < 5; index++) {
-    parseString = spawnAllStringsInSameLevel(parseString, algaeGrammar);
+  if (levels == 0) {
+    return string;
   }
 
-  return parseString;
+  const generatedAlgae = spawnAllStringsInSameLevel(
+    string,
+    algaeGrammar,
+  );
+
+  return generateAlgae(generatedAlgae, levels - 1, algaeGrammar);
 };
+
+const algae = generateAlgae(algaeGrammar.axiom, 10, algaeGrammar);
+
+console.log("algae", algae);
