@@ -1,0 +1,11 @@
+{
+  "tasks": {
+    "dev": "deno run --watch main.js",
+    "test:coverage" : "deno run --watch coverage",
+    "test" : "deno test ./test"
+  },
+  "imports": {
+    "@inquirer/prompts": "npm:@inquirer/prompts@^8.2.0",
+    "@std/assert": "jsr:@std/assert@1"
+  }
+}
