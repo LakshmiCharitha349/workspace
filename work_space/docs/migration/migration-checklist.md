@@ -12,25 +12,25 @@ Check off each item before decommissioning the current machine.
 
 #### Java Projects Without Remotes
 
-- [ ] `java/zooInfo` — create GitHub repo, push
-- [ ] `java/runtimeInstanceCreation` — create GitHub repo, push
-- [ ] `java/calculateScore` — create GitHub repo, push
-- [ ] `java/mockTests` — create GitHub repo, push
-- [ ] `java/bootcamp` — create GitHub repo, push
-- [ ] `java/streams` — create GitHub repo, push
-- [ ] `java/multiThreading` — create GitHub repo, push
-- [ ] `java/java_reflection` — create GitHub repo, push
-- [ ] `java/ioStreams` — create GitHub repo, push
+- [x] `java/zooInfo` — pushed to github.com/LakshmiCharitha349/zooInfo ✓
+- [x] `java/runtimeInstanceCreation` — pushed to github.com/LakshmiCharitha349/runtimeInstanceCreation ✓
+- [x] `java/calculateScore` — pushed to github.com/LakshmiCharitha349/calculateScore ✓
+- [x] `java/mockTests` — pushed to github.com/LakshmiCharitha349/mockTests ✓
+- [x] `java/bootcamp` — pushed to github.com/LakshmiCharitha349/bootcamp ✓
+- [x] `java/streams` — pushed to github.com/LakshmiCharitha349/streams ✓
+- [x] `java/multiThreading` — pushed to github.com/LakshmiCharitha349/multiThreading ✓
+- [x] `java/java_reflection` — pushed to github.com/LakshmiCharitha349/java_reflection ✓
+- [x] `java/ioStreams` — pushed to github.com/LakshmiCharitha349/ioStreams ✓
 
 #### JS Tryouts Without Remotes
 
-- [ ] `js/tryouts/sorting` — commit pending change, create GitHub repo, push
-- [ ] `js/tryouts/git_practice` — create GitHub repo, push (clean, just needs remote)
+- [x] `js/tryouts/sorting` — pushed to github.com/LakshmiCharitha349/sorting ✓
+- [x] `js/tryouts/git_practice` — pushed to github.com/LakshmiCharitha349/git_practice ✓
 
 #### Non-git Projects That Need Backing Up
 
-- [ ] `ai_agents/` — initialize git, create .gitignore (exclude node_modules), commit, create GitHub repo, push
-- [ ] `shell/` — initialize git, commit shell scripts, create GitHub repo, push
+- [x] `ai_agents/` — pushed to github.com/LakshmiCharitha349/ai-agents ✓
+- [x] `shell/` — pushed to github.com/LakshmiCharitha349/shell-scripts ✓
 - [ ] `js/tryouts/react/` — initialize git, create .gitignore (exclude node_modules), commit, create GitHub repo, push
 - [ ] `js/assignments/classroom/step-hotel-booking-flow` — initialize git or merge into step-hotel repo
 - [ ] `js/assignments/classroom/assignment_*` — consider if worth backing up or skip
@@ -48,15 +48,15 @@ Check off each item before decommissioning the current machine.
 
 ## .gitignore Fixes Needed
 
-- [ ] `copilot/Uno` — add .gitignore with `node_modules/` BEFORE any commit
-- [ ] `til-LakshmiCharitha349` — add .gitignore
-- [ ] `visuals/vis` — add .gitignore
-- [ ] `js/advent_of_code` — add .gitignore
-- [ ] `js/tryouts/git_practice` — add .gitignore
-- [ ] `js/tryouts/sorting` — add .gitignore
-- [ ] `js/tryouts/generators` — add .gitignore
-- [ ] `js/tryouts/promises` — add .gitignore
-- [ ] `js/tryouts/some_js_practices` — add .gitignore
+- [x] `copilot/Uno` — .gitignore added locally (push denied — not your fork) ✓
+- [x] `til-LakshmiCharitha349` — pushed ✓
+- [x] `visuals/vis` — pushed ✓
+- [x] `js/advent_of_code` — pushed ✓
+- [x] `js/tryouts/git_practice` — pushed ✓
+- [x] `js/tryouts/sorting` — pushed ✓
+- [x] `js/tryouts/generators` — pushed ✓
+- [x] `js/tryouts/promises` — pushed ✓
+- [x] `js/tryouts/some_js_practices` — pushed ✓
 
 ---
 
@@ -70,8 +70,8 @@ Check off each item before decommissioning the current machine.
 
 ## Workspace Root Repository
 
-- [ ] Decide what untracked dirs to commit to `LakshmiCharitha349/workspace.git`
-- [ ] Commit pending changes: `js/games/jaipur`, `js/l_systems/algae.js`
+- [x] Added .gitignore (excludes nested repos, .claude/, .DS_Store) ✓
+- [x] Committed and pushed: jaipur changes, l_systems, migration docs ✓
 
 ---
 
