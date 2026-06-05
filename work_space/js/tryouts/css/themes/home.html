@@ -1,0 +1,104 @@
+<html>
+
+<head>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family:
+        system-ui,
+        -apple-system,
+        Segoe UI,
+        Roboto,
+        sans-serif;
+      background: #333;
+      color: #333;
+    }
+
+    .main-container {
+      display: flex;
+      background-color: rgb(232, 243, 239);
+      height: 100vh;
+
+    }
+
+    #sidebar {
+      width: 160px;
+      height: 100vh;
+      background-color: #89d8d8;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      /* overflow-y: hidden; */
+    }
+
+    .nav-elements {
+      font-size: 14px;
+      letter-spacing: 0.01em;
+      width: 160px;
+      height: 110px;
+      display: flex;
+      /* margin: 20px 2px 5px 2px; */
+      justify-content: space-evenly;
+      flex-direction: column;
+      /* align-items: center; */
+
+    }
+
+    .item {
+      width: 160px;
+      height: 30px;
+      padding: 10px 20px 2px 5px;
+      text-align: start;
+      justify-self: start;
+    }
+
+    a {
+      border-collapse: collapse;
+      color: rgb(34, 35, 35);
+      text-decoration: none;
+    }
+
+    .item:hover {
+      background-color: rgba(12, 127, 127, 0.584);
+    }
+
+    #heading {
+      margin: 30px 50px 10px 0px;
+      padding: 5px 10px 5px 0px;
+      text-align: end;
+      color: rgb(197, 219, 222);
+
+      border-radius: 0px 10px 10px 0px;
+      /* padding: 5px 60px 5px 5px; */
+      background-color: rgba(3, 87, 87, 0.584);
+    }
+
+    .container {
+      height: 100vh;
+      /* overflow: scroll; */
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="main-container">
+    <nav id="sidebar">
+      <div id="heading">Gradients</div>
+      <div class="nav-elements">
+        <div class="item"><a href="gradients.html" target="#main-container">gradient1</a></div>
+        <div class="item"><a href="gradient2.html">gradient2</a></div>
+        <div class="item"><a href="gradient3.html">gradient3</a></div>
+      </div>
+    </nav>
+
+    <main class="container" id="main-container"></main>
+  </div>
+</body>
+
+</html>

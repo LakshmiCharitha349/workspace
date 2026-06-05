@@ -1,0 +1,10 @@
+.task {
+  display : flex;
+  flex-direction: row;
+  column-gap: 10px;
+}
+
+#delete-btn {
+  margin-top: 25px;
+  height : 20px
+}

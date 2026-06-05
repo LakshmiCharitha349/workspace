@@ -1,0 +1,11 @@
+const number = 10;
+const product1 = number * 1;
+console.log("product of two numbers is",product1);
+const product2 = number * 2;
+console.log("product of two numbers is",product2);
+const product3 = number * 3;
+console.log("product of two numbers is",product3);
+const product4 = number * 4;
+console.log("product of two numbers is",product4);
+const product5 = number * 5;
+console.log("product of two numbers is",product5);

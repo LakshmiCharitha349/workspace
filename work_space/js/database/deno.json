@@ -1,0 +1,17 @@
+{
+  "tasks": {
+    "colors" : {
+      "command": "deno -A colors_exec.js",
+      "dependencies": ["setup_paints"]
+    },
+    "setup_paints": "deno -A setup.js",
+    "randomNums" : {
+      "command" : "deno -A curd_randomNums.js",
+      "dependencies": ["setup_random_nums"]
+    },
+    "setup_random_nums" : "deno -A setup_randomNums.js"
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@1"
+  }
+}

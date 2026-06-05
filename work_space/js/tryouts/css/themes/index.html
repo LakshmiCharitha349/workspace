@@ -1,0 +1,148 @@
+<html>
+
+<head>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --g1: linear-gradient(45deg, rgba(255, 255, 255, 0.641), rgba(87, 176, 228, 0.873), rgba(30, 128, 184, 0.873), rgba(3, 102, 164, 0.873));
+      --g2: repeating-radial-gradient(rgb(128, 0, 0), magenta 18%, rgb(244, 121, 244) 22%);
+      --g3: linear-gradient(210deg, #cdfb13, #06fa0671, #89df896a);
+      --g4: repeating-linear-gradient(transparent, #9ed8af8b 40px),
+        repeating-linear-gradient(0.45turn, transparent, #7bec9d, #7bec9d 35px);
+      --g5: repeating-linear-gradient(0deg, transparent 0px 20px, rgba(72, 71, 71, 0.771) 20px 22px, transparent 22px 23px, rgba(72, 71, 71, 0.771) 23px 25px),
+        repeating-linear-gradient(90deg, rgba(72, 71, 71, 0.771) 0px 2px, transparent 2px 3px, rgba(72, 71, 71, 0.771) 3px 5px, transparent 5px 25px);
+    }
+
+    body {
+      background-color: rgb(60, 58, 58);
+    }
+
+    .container {
+      display: grid;
+      width: 470px;
+      height: 100vh;
+      /* background-color: antiquewhite; */
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      padding-top: 30px;
+      margin: 0px auto;
+      gap: 10px;
+    }
+
+
+    .card {
+      width: 150px;
+      height: 150px;
+      border: 0.5px solid #b2b2b2;
+    }
+
+    .grad {
+      background-color: white;
+
+      height: 130px;
+    }
+
+    .title {
+      height: 18px;
+      background-color: white;
+      text-align: center;
+      font-size: 12px;
+      color: #444;
+      --sheen: linear-gradient(45deg, rgba(254, 254, 254, 0.924), rgba(255, 255, 255, 0.344), rgba(254, 254, 254, 0.952));
+    }
+
+    .grad-1 {
+      background-image: var(--g1);
+    }
+
+    .grad-2 {
+      background-image: var(--g2);
+    }
+
+    .grad-3 {
+      background-image: var(--g3);
+    }
+
+    .grad-4 {
+      background-image: var(--g4);
+    }
+
+    .grad-5 {
+      background-color: rgb(250, 82, 91);
+      background-image: var(--g5);
+    }
+
+    .t1 {
+      background-image: var(--sheen), var(--g1);
+    }
+
+    .t2 {
+      background-image: var(--sheen), var(--g2);
+    }
+
+    .t3 {
+      background-image: var(--sheen), var(--g3);
+    }
+
+    .t4 {
+      background-image: var(--sheen), var(--g4);
+    }
+
+    .t5 {
+      background-color: rgb(250, 82, 91);
+      background-image: var(--sheen), var(--g5);
+    }
+
+    .t6 {
+      background-image: var(--sheen), var(--g6);
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <div class="card">
+      <a href="gradient1.html">
+        <div class="grad grad-1"></div>
+      </a>
+      <div class="title t1">Grdient1</div>
+    </div>
+    <div class="card">
+      <a href="gradient2.html">
+        <div class="grad grad-2"></div>
+      </a>
+      <div class="title t2">Grdient2</div>
+    </div>
+    <div class="card">
+      <a href="gradient3.html">
+        <div class="grad grad-3"></div>
+      </a>
+      <div class="title t3">Grdient3</div>
+    </div>
+    <div class="card">
+      <a href="gradient4.html">
+        <div class="grad grad-4"></div>
+      </a>
+      <div class="title t4">Grdient4</div>
+    </div>
+    <div class="card">
+      <a href="gradient5.html">
+        <div class="grad grad-5"></div>
+      </a>
+      <div class="title t5">Grdient5</div>
+    </div>
+    <div class="card">
+      <a href="gradient6.html">
+        <div class="grad grad-6"></div>
+      </a>
+      <div class="title t6">Grdient6</div>
+    </div>
+  </main>
+</body>
+
+</html>

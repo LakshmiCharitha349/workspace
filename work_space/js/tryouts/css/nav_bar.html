@@ -1,0 +1,91 @@
+<html>
+
+<head>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    body {
+      font-family:
+        system-ui,
+        -apple-system,
+        Segoe UI,
+        Roboto,
+        sans-serif;
+      background: #333;
+      color: #333;
+    }
+
+    .main-container {
+      display: flex;
+      background-color: rgb(232, 243, 239);
+      height: 100vh;
+
+    }
+
+    #sidebar {
+      width: 200px;
+      height: 100vh;
+      background-color: rgb(145, 228, 228);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      /* overflow-y: hidden; */
+      position: fixed;
+      padding: 20px 0px 0px 5px;
+    }
+
+    .nav-elements {
+      width: 190px;
+      height: 130px;
+      display: flex;
+      margin: 20px 2px 5px 2px;
+      justify-content: space-around;
+      flex-direction: column;
+      /* align-items: center; */
+
+    }
+
+    .item {
+      text-align: start;
+      padding: 5px 100px 5px 5px;
+      border-radius: 15px;
+    }
+
+    .item:hover {
+      background-color: rgba(229, 237, 237, 0.584);
+    }
+
+    #heading {
+      text-align: start;
+      padding: 5px 60px 5px 5px;
+      border: 1px solid #66666698;
+      background-color: rgba(240, 255, 255, 0.156);
+    }
+
+    .container {
+      height: 1000px;
+      /* overflow: scroll; */
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="main-container">
+    <nav id="sidebar">
+      <div class="item" id="heading">Search</div>
+      <div class="nav-elements">
+        <div class="item">* menu</div>
+        <div class="item">* about</div>
+        <div class="item">* contacts</div>
+      </div>
+    </nav>
+
+    <main class="container">its is main page</main>
+  </div>
+</body>
+
+</html>

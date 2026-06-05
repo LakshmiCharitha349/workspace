@@ -1,0 +1,25 @@
+
+      body {
+        font-family: Arial;
+        text-align: center;
+        margin-top: 50px;
+      }
+      .active {
+        color: green;
+        font-weight: bold;
+      }
+      .waiting {
+        color: gray;
+      }
+      button {
+        padding: 10px 20px;
+        margin: 10px;
+      }
+      #dialog {
+        display: none;
+        border: 1px solid black;
+        padding: 20px;
+        width: 200px;
+        margin: 20px auto;
+      }
+    

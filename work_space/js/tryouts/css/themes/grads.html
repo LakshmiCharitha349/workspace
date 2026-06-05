@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scroll Slide Effect</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hide scrollbar for Firefox */
+    /* html {
+    scrollbar-width: none;
+} */
+
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #111;
+    }
+
+    .spacer {
+      height: 100vh;
+    }
+
+    .slide {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4rem;
+      color: white;
+    }
+
+    .slide:nth-child(1) {
+      background: radial-gradient(circle farthest-side, #ff6b6b, #2388a0);
+      z-index: 1;
+    }
+
+    .slide:nth-child(2) {
+      background: repeating-linear-gradient(135deg, orange 0%, orange 5%, rgba(255, 255, 255, 0.8) 5%, rgba(255, 255, 255, 0.8) 5.5%, teal 5.5%, teal 10.5%, rgba(255, 255, 255, 0.8) 10.5%, rgba(255, 255, 255, 0.8) 11%);
+      z-index: 2;
+    }
+
+    .slide:nth-child(3) {
+      background: radial-gradient(circle farthest-side, rgba(255, 255, 255, 0.2), transparent), repeating-linear-gradient(135deg, gray, gray 2%, dimgray 2%, dimgray 4%);
+      z-index: 3;
+    }
+
+    .slide:nth-child(4) {
+      background-color: coral;
+      background-image:
+        radial-gradient(circle, indianred 20%, transparent 20%),
+        radial-gradient(circle, indianred 20%, transparent 20%);
+      background-size: 40px 40px;
+      background-position: 0 0, 20px 20px;
+      z-index: 4;
+    }
+
+    .content {
+      text-align: center;
+      padding: 2rem;
+      max-width: 800px;
+      font-size: 8rem;
+      text-shadow: 0px 0px 5px black;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="slide">
+    <div class="content">Tidal Ember</div>
+  </section>
+
+  <section class="slide">
+    <div class="content">Carnival Circuit</div>
+  </section>
+
+  <section class="slide">
+    <div class="content">Steel Monsoon</div>
+  </section>
+
+  <section class="slide">
+    <div class="content">Cherry Picnic</div>
+  </section>
+
+  <div class="spacer"></div>
+
+</body>
+
+</html>

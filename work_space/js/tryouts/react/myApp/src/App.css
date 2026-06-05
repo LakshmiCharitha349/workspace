@@ -1,0 +1,154 @@
+ * {
+   margin: 0px;
+   box-sizing: border-box;
+ }
+
+ .container {
+   display: flex;
+   flex-direction: row;
+   font-family: system-ui,
+     -apple-system, BlinkMacSystemFont,
+     'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+     'Open Sans', 'Helvetica Neue', sans-serif;
+ }
+
+ .sidebar {
+   height: 100vh;
+   width: 20%;
+   background-color: #f4f4f4;
+   font-size: 22px;
+   display: flex;
+   flex-direction: column;
+   padding: 12px 12px 12px 0px;
+ }
+
+ .poke-types, #search-bar {
+   letter-spacing: 0.01em;
+   text-decoration: none;
+   color: #666565;
+   padding: 4px 0px 4px 15px;
+ }
+
+ #search-bar input{
+
+  font-size: 20px;
+  padding : 3px 10px;
+  margin-bottom: 5px;
+  border-bottom :none
+ }
+
+ #searched-letters {
+  color : black;
+ }
+
+#search-list {
+  font-size: 16px;
+  width : 233px;
+  line-height: 1.5em;
+  margin-top : -5px;
+  border : 2px solid black;
+  border-top: 0px;
+  background-color: white;
+  z-index : 9999;
+  list-style: none;
+}
+
+ #search-bar input::before {
+  /* content : "🔍"; */
+ }
+ ::-webkit-scrollbar {
+   display: none;
+ }
+
+ .poke-cards {
+   padding: 15px 0px 15px 0px;
+   margin: 0px auto;
+   width: 1100px;
+   height: 100vh;
+   text-transform: capitalize;
+   overflow-y: scroll;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   gap: 20px;
+ }
+
+ .card {
+   height: 350px;
+   background-color: #f4f4f4;
+   padding: 10px;
+   border: 2px solid #c4c4c4;
+   border-radius: 5px;
+ }
+
+ .img-container {
+   height: 175px;
+   background-color: #e6e6e6;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .pic {
+   height: 170px;
+ }
+
+ .properties {
+   width: 100%;
+   border-collapse: collapse;
+ }
+
+ .properties th {
+   color: #6f6f6f;
+   padding: 8px 0px;
+ }
+
+ .clmn1 {
+   text-align: left;
+ }
+
+ .clmn2 {
+   text-align: right;
+ }
+
+ .properties tbody tr {
+   width: 100%;
+   height: 20px;
+   border-bottom: 1px solid #d3d3d3;
+   font-size: 12px;
+   letter-spacing: 0.01em;
+   color: #6f6f6f;
+   font-weight: 600;
+ }
+
+ .properties tbody tr:last-child {
+   border-bottom: none;
+ }
+
+ .types {
+   justify-content: flex-end;
+   align-items: center;
+   display: flex;
+   flex-direction: row;
+   text-align: right;
+ }
+
+ .types div:last-child {
+   margin-left: 5px;
+ }
+
+ .poke-type-container {
+   color: white;
+   font-size: 10px;
+   letter-spacing: 0.01em;
+   border-radius: 2px;
+   padding: 3px 5px;
+ }
+
+ .all {
+   background-color: #494949e2;
+   /* color: white; */
+ }
+ 
+.active {
+   color : white;
+ }
